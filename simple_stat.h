@@ -5,6 +5,7 @@
 #include <set>
 #include <vector>
 
+
 template <class T> class Simple_stat {
 private:
   std::vector<T> v;            // initial data in vector

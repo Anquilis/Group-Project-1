@@ -2,10 +2,15 @@
 #include <iostream>
 #include <set>
 #include <vector>
+//#include "alist.h"
+
 
 // --------------- Main Function ---------------
 
 int main() {
+
+/* Everything here as previously written before 5/23
+
   // set1 is a vector of numbers; initial data
   std::vector<double> set1{47, 67, 55, 92, 118}; 
   double new_data = 0;
@@ -46,4 +51,7 @@ int main() {
       // std::cout << "Standard deviation: " << Simple_stat.get_SD() << std::endl;
     }
   }
+
+  End of previously written code 5/23
+  */ 
 }
