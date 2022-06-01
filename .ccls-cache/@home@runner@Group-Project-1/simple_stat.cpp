@@ -211,4 +211,5 @@ T Simple_stat<T>::find_and_count(T target) // using binary search
   {
     std::cout << "Number entered is not found." << std::endl;
   }
+
 }
