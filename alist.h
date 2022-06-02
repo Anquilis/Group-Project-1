@@ -24,13 +24,16 @@ public:
   AList() {
     maxSize = 0;
     listSize = 0;
+    listArray = new E[maxSize];
   }
 
 template <typename D>
-  AList(const D& datastruct) { // Constructor parameter using general datastructor that allows iteration
+  AList(D& datastruct) { // Constructor parameter using general datastructor that allows iteration
+    maxSize = 0;
+    listArray = new E[maxSize];
     for (auto i : datastruct) {
-      append(i);
       maxSize++;
+      append(i);
     }
   }
   ~AList() { delete [] listArray; } // Destructor
@@ -201,6 +204,7 @@ template <typename D>
   {
     for (auto i : datastruct)
     {
+      maxSize++;
       append(i);
     }
   }
